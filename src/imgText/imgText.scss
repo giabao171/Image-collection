@@ -1,0 +1,119 @@
+.model-img-colection {
+    background-color: rgb(255, 255, 255);
+    // top: 0;
+    // bottom: 0;
+    // right: 0;
+    // left: 0;
+    // position: fixed;
+}
+
+.img-colection-content {
+    width: 100%;
+    height: 100%;
+}
+
+.img-colection-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    // justify-content: center;
+    // align-items: center;
+}
+
+.list-img {
+    width: 600px;
+    display: grid;
+    grid-template-areas:
+    "img1 img1 img2 img2 img3 img5"
+    "img4 img4 img2 img2 img6 img6"
+    "img7 img7 img7 img7 img6 img6"
+    "img10 img10 img8 img8 img8 img8"
+    "img10 img10 img9 img9 img9 img9"
+    "img10 img10 img11 img11 img12 img13";
+    // column-gap: 10px;
+    // row-gap: 10px;
+    // transform: rotate(90deg)
+    // animation: app-logo-spin infinite 5s linear
+}
+
+.img-item {
+    width: 200px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & img {
+        width: 95%;
+        height: 95%;
+        border-radius: 9px;
+    }
+}
+
+.img-item:nth-child(1) {
+    grid-area: img1;
+}
+.img-item:nth-child(2) {
+    grid-area: img2;
+    height: 500px;
+}
+.img-item:nth-child(3) {
+    grid-area: img3;
+    width: 100px;
+}
+.img-item:nth-child(4) {
+    grid-area: img4;
+}
+.img-item:nth-child(5) {
+    grid-area: img5;
+    width: 100px;
+}
+.img-item:nth-child(6) {
+    grid-area: img6;
+    height: 500px;
+    width: 200px;
+}
+.img-item:nth-child(7) {
+    width: 400px;
+    grid-area: img7;
+}
+.img-item:nth-child(8) {
+    grid-area: img8;
+    height: 125px;
+    width: 400px;
+}
+.img-item:nth-child(9) {
+    grid-area: img9;
+    height: 125px;
+    width: 400px;
+}
+.img-item:nth-child(10) {
+    grid-area: img10;
+    height: 250px;
+}
+
+.img-item:hover {
+    
+    // width: 200px;
+    // height: 200px;
+    padding: 0 0;
+
+    & img {
+        width: 98%;
+        height: 98%;
+        
+        // border-radius: 50%;
+        // animation: app-logo-spin infinite 5s linear
+    }
+}
+
+
+@keyframes app-logo-spin {
+    from {
+      transform: rotate(0deg)
+    }
+    to {
+      transform: rotate(360deg)
+    }
+  }
+
