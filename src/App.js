@@ -10,7 +10,7 @@ function App() {
   const themeValue = useContext(themeContext)
 
   return (
-      <div style={{padding: '0 20px'}}>
+      <div>
         {/* <button onClick={themeValue.tongleTheme}>Tongle</button>
         <Content/> */}
         <ModelImg></ModelImg>
